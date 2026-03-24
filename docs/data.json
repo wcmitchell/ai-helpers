@@ -175,6 +175,12 @@
           "synopsis": "/jira:status-rollup issue-id [--start-date YYYY-MM-DD] [--end-date YYYY-MM-DD]"
         },
         {
+          "argument_hint": "",
+          "description": "",
+          "name": "sync-status",
+          "synopsis": "/jira:sync-status [--branch branch-name] [--ticket PROJ-1234]"
+        },
+        {
           "argument_hint": "[project-key] [--component name] [--label label-name] [user-filters...]",
           "description": "Update weekly status summaries for Jira issues with component and user filtering",
           "name": "update-weekly-status",
@@ -276,9 +282,14 @@
           "description": "Shared engine for analyzing Jira issue activity and generating status summaries",
           "id": "status-analysis",
           "name": "Jira Status Analysis Engine"
+        },
+        {
+          "description": "Automatically sync JIRA ticket status based on git branch and commit activity",
+          "id": "status-sentinel",
+          "name": "Status Sentinel"
         }
       ],
-      "version": "0.3.6"
+      "version": "0.3.7"
     },
     {
       "commands": [
